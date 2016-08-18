@@ -12,6 +12,9 @@ import com.example.softbaked.retrofitexample.api.RetrofitManager;
 import com.example.softbaked.retrofitexample.api.time.TimeService;
 import com.example.softbaked.retrofitexample.api.time.model.ServerTimeGson;
 
+import java.security.MessageDigest;
+import java.text.ParseException;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -34,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
     @Override
     protected void onStart() {
